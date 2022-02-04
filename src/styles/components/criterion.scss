@@ -10,7 +10,6 @@
     }
     &_content {
         padding-top: 1.7rem;
-        //display: none;
         &_title {
             font-size: 2rem;
             line-height: 2.6rem;
@@ -233,17 +232,6 @@
     @media (max-width: $mobile-sm) {
         top: 110%;
     }
-    //margin-left: -80px;
-    /*&::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: #555 transparent transparent transparent;
-    }*/
 }
 
 .show {

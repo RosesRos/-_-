@@ -7,6 +7,7 @@
  
 - SASS
 - PUG HTML
+- AOS JS для анимация
 - JAVASCRIPT
 - WEBPACK
 

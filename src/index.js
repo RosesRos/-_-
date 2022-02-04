@@ -1,7 +1,6 @@
 import '@/styles/main';
 import 'bootstrap';
 import './scripts/aosCustom';
-//import './scripts/add';
 
 let show = document.getElementById('defaultOpen');
 show.addEventListener('click', myFunction);
@@ -22,14 +21,4 @@ function showPopup() {
   let popup1 = document.getElementById('myPopup');
   popup1.classList.toggle('show');
 }
-
-/*function showPopup() {
-  let popup1 = document.getElementById('myPopup');
-  if (popup1.style.display === 'block') {
-    popup1.style.display = 'none';
-  } else {
-    popup1.style.display = 'block';
-  }
-}*/
-
 

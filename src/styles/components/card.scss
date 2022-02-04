@@ -1,0 +1,131 @@
+.card {
+    min-width: 67.9rem;
+    width: 100%;
+    height: 18.6rem;
+    padding: 1.6rem;
+    -webkit-border: 1px solid #DFE4F5;
+    -o-border: 1px solid #DFE4F5;
+    -moz-border: 1px solid #DFE4F5;
+    -ms-border: 1px solid #DFE4F5;
+    border: 1px solid #DFE4F5;
+    -webkit-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+    @media (max-width: $desktop) {
+        min-width: 40rem;
+    }
+    @media (max-width: $mobile) {
+        min-width: 30rem;
+    }
+    &_header {
+        @extend %align-block;
+        -webkit-align-items: flex-start;
+        -o-align-items: flex-start;
+        -moz-align-items: flex-start;
+        -ms-align-items: flex-start;
+        align-items: flex-start;
+    }
+    &_goal {
+        width: 11.4rem;
+        height: 4.2rem;
+        padding: 0.8rem 1.2rem;
+        -webkit-background-color: #DFE4F5;
+        -o-background-color: #DFE4F5;
+        -moz-background-color: #DFE4F5;
+        -ms-background-color: #DFE4F5;
+        background-color: #DFE4F5;
+        @extend %border-block;
+        -webkit-border-radius: 0.4rem;
+        -o-border-radius: 0.4rem;
+        -moz-border-radius: 0.4rem;
+        -ms-border-radius: 0.4rem;
+        border-radius: 0.4rem;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        font-weight: 500;
+        color: $colorText_main;
+        @extend %text-grow;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        @media (max-width: $mobile) {
+            font-size: 1.6rem;
+        }
+        &:hover {
+            cursor: pointer;
+            -webkit-background-color: #cfd0d4;
+            -o-background-color: #cfd0d4;
+            -moz-background-color: #cfd0d4;
+            -ms-background-color: #cfd0d4;
+            background-color: #cfd0d4;
+        }
+    }
+    &_icons {
+        @extend %align-block;
+        @extend %equal-height;
+        -webkit-gap: 3rem;
+        -o-gap: 3rem;
+        -moz-gap: 3rem;
+        -ms-gap: 3rem;
+        gap: 3rem;
+        list-style: none;
+        &_link {
+            width: 2.4rem;
+            height: 2.4rem;
+            -webkit-color: $colorText_secondary;
+            -o-color: $colorText_secondary;
+            -moz-color: $colorText_secondary;
+            -ms-color: $colorText_secondary;
+            color: $colorText_secondary;
+            -webkit-background: $bg_default;
+            -o-background: $bg_default;
+            -moz-background: $bg_default;
+            -ms-background: $bg_default;
+            background: $bg_default;
+            @extend %border-block;
+            -webkit-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            -moz-transition: all .2s linear;
+            -ms-transition: all .2s linear;
+            transition: all .2s linear;
+        }
+    }
+    &_content {
+        margin-top: 1.5rem;
+    }
+    &_text {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        -webkit-font-style: normal;
+        -o-font-style: normal;
+        -moz-font-style: normal;
+        -ms-font-style: normal;
+        font-style: normal;
+        color: $colorText_secondary;
+        @extend %text-grow;
+        @media (max-width: $mobile) {
+            font-size: 1rem;
+        }
+    }
+    &_title {
+        font-size: 2rem;
+        line-height: 1rem;
+        font-weight: 500;
+        @extend %text-grow;
+        -webkit-color: $colorText_primay;
+        -o-color: $colorText_primay;
+        -moz-color: $colorText_primay;
+        -ms-color: $colorText_primay;
+        color: $colorText_primay;
+        @media (max-width: $desktop) {
+            font-size: 1.6rem;
+        }
+        @media (max-width: $mobile) {
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+$font_1: 'Roboto';
+$font_2: 'RobotoBold';
+$colorText_main: #052A34;
+$colorText_primay: #313A3E;
+$colorText_secondary: #6D7A8F;
+$bg_default: transparent;
+$flag_color: #FF6633;
+$bg_check: #47C293;
+$white: white;
+$black: black;
+
+
+//extends scss styles
+
+%align-block {
+    -webkit-display: flex;
+    -o-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+%equal-height {
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+%border-block {
+    -webkit-border: none;
+    -o-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    border: none;
+}
+
+%text-grow {
+    -webkit-flex-grow: 0;
+    -o-flex-grow: 0;
+    -moz-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+}
+
+%bg-checkbo {
+    -webkit-background-color: $bg_check;
+    -o-background-color: $bg_check;
+    -moz-background-color: $bg_check;
+    -ms-background-color: $bg_check;
+    background-color: $bg_check;
+}
+
+
+//media queries
+$desktop: 1200px;
+$laptop: 960px;
+$tablet: 767px;
+$mobile: 480px;
+$mobile-landscape: 850px;
+$mobile-sm: 390px;
+$mobile-sm-landscape: 650px;

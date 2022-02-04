@@ -1,0 +1,27 @@
+
+.section {
+    overflow: hidden;
+    -webkit-float: right;
+    -ms-float: right;
+    -moz-float: right;
+    -o-float: right;
+    float: right;
+    @media (max-width: $mobile-sm-landscape) {
+        float: none;
+    }
+    @media (max-width: $mobile) {
+        float: none;
+    }
+    &_content {
+        width: 67.9rem;
+        @media (max-width: $desktop) {
+            width: 40rem;
+        }
+        @media (max-width: $mobile-landscape) and (orientation: landscape) {
+            width: 100%;
+        }
+    }
+}
+
+
+

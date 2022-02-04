@@ -1,0 +1,68 @@
+@import '~normalize.css';
+@import '~bootstrap';
+@import 'fonts';
+@import 'variables';
+@import 'pagination';
+@import 'aside';
+@import './components/card';
+@import './components/criterion';
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+body {
+    font-family: $font_1, sans-serif;
+    font-size: 16px;
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+.main {
+    padding-left: 5.2rem;
+    padding-top: 2.4rem;
+    padding-right: 2.4rem;
+    @media (max-width: $laptop) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.container {
+    max-width: 160rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0 auto;
+}
+
+.mobile {
+    display: none;
+    @media (max-width: $mobile-landscape) and (orientation: landscape) {
+        display: block;
+        padding-bottom: 2rem;
+    }
+    @media (max-width: $mobile-sm-landscape) {
+        display: block;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+}
+
+.mobile_default {
+    @media (max-width: $mobile-landscape) and (orientation: landscape) {
+        display: none;
+    }
+    @media (max-width: $mobile-sm-landscape) {
+        display: none;
+    }
+}
+

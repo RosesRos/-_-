@@ -1,0 +1,43 @@
+extends ../layout/default.pug 
+
+block title 
+    title Test Content
+
+
+block content 
+    .section_content.mobile
+        include ../components/card1
+
+    aside.aside 
+        .container 
+            .aside_inner 
+                .aside_content 
+                    .flag 
+                        .flag_image 
+                            .flag_line 
+                            .flag_buttons 
+                                button.flag_btn Начальника цеха 
+                                button.flag_btn Зам. начальника цеха
+                                button.flag_btn(id="defaultOpen") Старший мастер   
+                                    i.material-icons assistant_photo
+                                button.flag_btn Мастер участка
+                                    i.material-icons check_circle 
+                    //-img.hidden(src="./assets/mountain.png", alt="jet", id="goofyPic") 
+                    //-canvas(id="drawing", height="621", width="423").aside_content_canvas 
+                        p.aside_content_text Canvas not supported
+
+    section.section
+        .container 
+            .section_inner 
+                .section_content
+                    include ../components/card 
+                    .criterion 
+                        h2.criterion_title КРИТЕРИИ ДОСТИЖЕНИЯ 
+                            span.criterion_icon(id="popup") 
+                                i.material-icons info 
+                            span.popuptext(id="myPopup") Чтобы достигнуть цели, надо пройти все уровни
+                        include ../components/criterion 
+                
+                        
+
+    

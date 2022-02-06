@@ -86,6 +86,7 @@
             position: absolute;
             height: 52rem;
             bottom: 0;
+            padding-bottom: 3rem;
             @media (max-width: $mobile-sm) {
                 height: 35rem;
             }
@@ -374,7 +375,7 @@
             }
             &:nth-child(6) {
                 width: 16.6rem;
-                margin-bottom: 3rem;
+                //margin-bottom: 3rem;
                 margin-right: 20%;
                 background-color: $bg_check;
                 @extend %align-block;
